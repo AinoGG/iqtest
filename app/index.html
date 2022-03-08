@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <nav class="menu-nav">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+            <span></span>
+        </label>
+        <ul class="menu-nav__list">
+            <li><a class="menu-nav__link back-to-main" href="#">Главная</a></li>
+            <li><a class="menu-nav__link back-to-main" href="#">Информация о тесте</a></li>
+            <li><a class="menu-nav__link" href="#">Пройти тест</a></li>
+        </ul>
+    </nav>
+
+
+    <div id="app" class="app-styles hide">
+        <div class="game-layer">
+            <div class="progress-line">
+                <div class="progress-bar"></div>
+            </div>
+            <div id="question" class="question"></div>
+            <div class="answers">
+
+            </div>
+            <button id="next" class="next-btn app-btn" disabled>Далее</button>
+        </div>
+
+    </div>
+
+
+
+
+    <div class="main-page__content ">
+        <header>
+            <div class="container">
+                <section class="header">
+                    <p class="header__top-text">Пройдите точный и быстрый</p>
+                    <h1>Тест на определение iq</h1>
+                    <img src="./images/brain-img.png" alt="brain-img">
+                    <button class="test-btn">Пройти тест</button>
+                    <p class="header__bottom-text">
+                        <span>
+                            И получите рекомендации<br>
+                            по развитию своего интеллекта <br>
+                        </span>
+                        и улучшению финансового благосостояния и личной жизни
+                    </p>
+                    <a class="more-info__link" href="#">Подробнее</a>
+                </section>
+            </div>
+        </header>
+
+        <div class="blue-screen">
+            <div class="container">
+                <p class="blue-screen__text">
+                    Профессиональный IQ-тест позволяет не только определить коэффициент вашего интеллекта,
+                    но и выработать список рекомендаций для повышения этого показателя.
+                </p>
+            </div>
+        </div>
+        <div class="gray-screen">
+            <div class="container">
+                <p>
+                    Также по результатам теста<br> <span style="text-transform: uppercase;">вы получите</span>
+                    подробные <span style="text-transform: uppercase;">советы</span> по определению наиболее
+                    перспективной <span>ДЛЯ ВАШЕГО ТИПА интеллекта
+                        СФЕРЫ ДЕЯТЕЛЬНОСТИ,<br></span>
+                    которая принесет вам скорейший финансовый результат.
+
+                </p>
+                <img src="./images/gray-screen__img.png" alt="brain-img">
+                <button class="test-btn">Пройти тест</button>
+            </div>
+        </div>
+        <div class="last-screen">
+            <div class="container">
+                <p>
+                    Прохождение теста займет у вас не более <span>12 минут</span>, а его <span
+                        style="color:#fff">результаты</span> вы <span>сможете
+                        использовать всю жизнь.</span>
+                </p>
+                <div class="last-screen__text_bg">
+                    <p>
+                        Профессиональная интерпретация и детально <span>проработанные рекомендации</span> позволят вам
+                        качественно <span>изменить все аспекты своей жизни:</span> от финансового до любовного.
+                    </p>
+                </div>
+                <button class="test-btn">Пройти тест</button>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="result-page hide">
+        <div class="container">
+            <p class="title_white">
+                Ваш результат рассчитан:
+            </p>
+            <p class="text_white">
+                вы относитесь к 3% респондентов, чей уровень интеллекта более чем на
+                15 пунктов отличается от среднего в большую или меньшую сторону!
+            </p>
+            <p class="title_green">
+                Скорее получите свой результат!
+            </p>
+            <p class="text_blue-bg">
+                В целях защиты персональных
+                данных результат теста, их подробная интерпретация и рекомендации доступны в виде голосового сообщения
+                по
+                звонку с вашего мобильного телефона
+            </p>
+            <p class="text_green">
+                Звоните скорее, запись доступна всего
+            </p>
+            <div id="timer" class="timer">
+                10:00 МИНУТ
+            </div>
+            <div class="phone-box" id="callTo">
+                <img  src="./images/phone.png" alt="phone">
+                <p class="text_red-bg">
+                    позвонить и прослушать
+                    результат
+                </p>
+            </div>
+            <div class="response-slot"></div>
+        </div>
+    </div>
+    <footer>
+        <div class="main-footer">
+            <p class="footer__year">©2019</p>
+            <p class="footer__result hide">
+                TERMENI SI CONDITII: ACESTA ESTE UN SERVICIU DE DIVERTISMENT. PRIN FOLOSIREA LUI DECLARATI CA AVETI
+                18
+                ANI IMPLINITI,
+            </p>
+        </div>
+    </footer>
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

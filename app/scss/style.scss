@@ -361,7 +361,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center;    
     .progress-line{
       position: absolute;
       left: 50%;
@@ -372,12 +372,13 @@ body{
       width: 260px;
       height: 11px;
       border-radius: 10px;
-      background-color: rgba(242, 243, 243, 0.59);
+      background-color: rgba(242, 243, 243, 0.59);      
       .progress-bar{
         background: #3BDE7C;
         border-radius: 10px; 
         width: 0%;
         height: 100%; 
+        transition: all .5s ease-in-out;
       }
     }
     .question{
@@ -448,6 +449,7 @@ body{
     
   }
   .input-answer:checked +label::before{
+    transition: all .5s ease-in-out;
     background-color: #2950C2;
     border: 1px solid #000;
   }
